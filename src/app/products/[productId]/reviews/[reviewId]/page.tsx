@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+
 export default async function ProductReview({
   params,
 }: {
@@ -5,6 +7,9 @@ export default async function ProductReview({
 }) {
   const { productId, reviewId } = await params;
 
+  if (Number(reviewId) > 1000) {
+    notFound();
+  }
   return (
     <div>
       <h2>Product id: {productId}</h2>
