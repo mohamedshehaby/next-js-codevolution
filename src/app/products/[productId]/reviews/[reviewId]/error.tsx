@@ -10,6 +10,7 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+
   const router = useRouter();
 
   const reload = () => {
