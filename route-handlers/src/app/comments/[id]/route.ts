@@ -1,5 +1,4 @@
 import { comments } from "@/app/comments/data";
-import { log } from "console";
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ id: string }> }
