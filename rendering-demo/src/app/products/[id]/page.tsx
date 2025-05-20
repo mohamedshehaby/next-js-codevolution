@@ -11,7 +11,7 @@ export default async function ProductDetailPage({
 
 
     return <h1>
-
+        {new Date().toTimeString()}
         Product Detail Page {id}
     </h1>
 }
